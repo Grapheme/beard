@@ -7,6 +7,209 @@
 		background-image: url(../images/index/man.jpg);
 		background-size: 100% auto;
 		background-position: center center;
+
+		.header__left {
+			position: absolute;
+			left: 80px;
+			top: 120px;
+			width: 115px;
+			text-align: center;
+
+			.left__logo {
+				height: 85px;
+				background-image: url(../images/index/eco-beard.png);
+				background-size: auto 100%;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+
+			.left__content {
+				margin-top: 30px;
+
+				.left__glass {
+					display: inline-block;
+					vertical-align: middle;
+					width: 14px;
+					height: 14px;
+					background-image: url(../images/index/glass.png);
+					background-size: contain;
+					background-position: center center;
+					background-repeat: no-repeat;
+				}
+
+				.left__title {
+					font-family: 'osnova_pro';
+					font-size: 8px;
+					text-transform: uppercase;
+					margin-top: 10px;
+				}
+
+				.left__count {
+					position: relative;
+					margin-top: 7px;
+					width: 200px;
+					left: 50%;
+					margin-left: -100px;
+
+					span {
+						display: inline-block;
+						width: 16px;
+						height: 26px;
+						line-height: 26px;
+						text-align: center;
+						text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+						background-image: url(../images/index/number-wrap.png);
+						background-size: 100% auto;
+						background-position: center center;
+						background-repeat: no-repeat;
+						margin: 1px;
+						font-weight: 500;
+					}
+				}
+
+				.left__litters {
+					position: relative;
+					left: 50%;
+					margin-left: -100px;
+					margin-top: 5px;
+					font-family: 'osnova_pro';
+					font-size: 7px;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 20px;
+					letter-spacing: 13px;
+				}
+			}
+
+			.left__adult {
+				height: 20px;
+				background-image: url(../images/index/adult.png);
+				background-size: contain;
+				background-position: center center;
+				background-repeat: no-repeat;
+				margin-top: 40px;
+			}
+		}
+
+		.header__right {
+			position: absolute;
+			right: 80px;
+			top: 120px;
+			width: 115px;
+			text-align: center;
+
+			.right__text {
+				position: relative;
+				left: 50%;
+				margin-left: -56px;
+				width: 112px;
+
+				.text__line {
+					img {
+						max-width: 100%;
+					}
+				}
+
+				.text__xs {
+					font-family: 'osnova_pro';
+					font-size: 8px;
+					text-transform: uppercase;
+					letter-spacing: 4px;
+				}
+
+				.text__md {
+					font-family: 'osnova_pro';
+					font-size: 11px;
+					text-transform: uppercase;
+					letter-spacing: 4px;
+					margin-top: 3px;
+				}
+
+				.text__xl {
+					text-shadow: 0 2px 0 #f8f8f8, 0 4px 0 #fecd2d;
+					text-transform: uppercase;
+					font-weight: 500;
+					font-size: 37px;
+
+					&:last-child {
+						margin-top: -5px;
+						margin-right: -10px;
+						letter-spacing: 7px;
+					}
+				}
+			}
+
+			.right__gift {
+				position: relative;
+				height: 120px;
+				margin-top: 20px;
+
+				.us-arrow {
+					display: inline-block;
+					position: absolute;
+					width: 13px;
+					height: 30px;
+					top: 50%;
+					margin-top: -15px;
+					background-size: 60% auto;
+
+					&.arrow-left {
+						left: -25px;
+					}
+
+					&.arrow-right {
+						right: -25px;
+					}
+				}
+
+				.gift__list {
+					.list__item {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						opacity: 0;
+
+						&.active {
+							opacity: 1;
+						}
+
+						img {
+							max-width: 100%;
+							max-height: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.header__content {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 30px;
+			text-align: center;
+
+			.content__title {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 0px;
+				width: 500px;
+				height: 65px;
+				background-image: url(../images/index/title.png);
+				background-size: 100% auto;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+
+			.content__desc {
+				text-transform: uppercase;
+				line-height: 1.45;
+				letter-spacing: 1.7px;
+				margin-top: 45px;
+			}
+		}
 	}
 
 	.main__steps {
@@ -39,11 +242,57 @@
 				width: 120px;
 				left: 50%;
 				margin-left: -60px;
+				margin-top: 5px;
+				text-transform: uppercase;
+				font-size: 15px;
+				font-weight: 200;
+				letter-spacing: 1px;
 			}
 		}
 
 		.steps__btn {
 			margin-top: 40px;
+		}
+	}
+
+	.main__slider {
+		margin: 60px 0;
+
+		.slider__block {
+			position: relative;
+			height: 200px;
+			width: 535px;
+			margin: 0 auto;
+			//overflow: hidden;
+
+			.us-arrow {
+				position: absolute;
+				width: 50px;
+				height: 100%;
+				background-size: 20% auto;
+				top: 0;
+
+				&.arrow-left {
+					left: -50px;
+				}
+
+				&.arrow-right {
+					right: -50px;
+				}
+			}
+
+			.block__images {
+				width: 20000em;
+
+				.images__item {
+					display: inline-block;
+					vertical-align: top;
+					width: (535/6)+px;
+					height: (200/2)+px;
+					background-size: cover;
+					background-position: center center;
+				}
+			}
 		}
 	}
 
@@ -60,6 +309,9 @@
 
 		a {
 			color: #fff;
+			font-size: 10px;
+			font-weight: 300;
+			text-transform: uppercase;
 		}
 	}
 }

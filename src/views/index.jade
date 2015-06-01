@@ -4,22 +4,65 @@ block content
     .page-main
         .main__header
             .header__left
+                .left__logo
+                .left__content
+                    .left__glass
+                    .left__title Мы уже<br><b>Сэкономили</b>
+                    .left__count
+                        span 1
+                        span 8
+                        span 9
+                        span 7
+                        span 4
+                        span 0
+                    .left__litters Литров
+                .left__adult
             .header__right
+                .right__text
+                    .text__xs Получай
+                    .text__line
+                        img(src="images/index/line-mus.png")
+                    .text__xl Подарки
+                    .text__md в обмен на
+                    .text__line
+                        img(src="images/index/line-heart.png")
+                    .text__xl Лаики
+                .right__gift
+                    a(href="#").us-arrow.arrow-left
+                    a(href="#").us-arrow.arrow-right
+                    .gift__list
+                        .list__item.active
+                            img(src="images/index/product.png")
             .header__content
-                .content__title Борода спасет мир
+                .content__title БОРОДА СПАСЕТ МИР
+                .content__desc.
+                    Мужчина, бреясь каждый день, расходует 600 литров воды в неделю.<br>
+                    А зачем так много? Бороды – это модно, и девушкам нравится.<br>
+                    Я вот обещаю не бриться 2 месяца и посмотрим<br>
+                    сколько воды я смогу сэкономить.
         .main__steps
             .steps__item
                 img(src="images/index/step-1.png")
-                .item__text Сделай селфи
+                .item__text Сделай<br>селфи
             .steps__arrow
             .steps__item
                 img(src="images/index/step-2.png")
-                .item__text Преврати его в «Бороделфи»
+                .item__text Преврати его<br>в «Бороделфи»
             .steps__arrow
             .steps__item
                 img(src="images/index/step-3.png")
-                .item__text Узнай, сколько воды ты мог сэкономить
+                .item__text Узнай, сколько<br>воды ты мог<br>сэкономить
             .steps__btn
                 a(href="#").btn-big Сделать бороделфи
+        .main__slider
+            .slider__block
+                a(href="#").us-arrow.arrow-left
+                a(href="#").us-arrow.arrow-right
+                .block__images
+                    each i in [1,2,3,4,5,6]
+                        .images__item(style="background-image: url('images/tmp/index.jpg');")
+                    br
+                    each i in [1,2,3,4,5,6]
+                        .images__item(style="background-image: url('images/tmp/index.jpg');")
         .main__footer
             a(href="#") Правила использования

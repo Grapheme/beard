@@ -1,5 +1,9 @@
 $borderWidth: 4px;
 
+html {
+	font-family: "pf_din_text_comp_pro";
+}
+
 .main-wrapper {
 	position: relative;
 	max-width: 810px;
@@ -134,4 +138,21 @@ $borderWidth: 4px;
 	padding: 0 30px;
 	color: #222;
 	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'pf_kids_prograde_five';
+	font-size: 20px;
+}
+
+.us-arrow {
+	background-size: auto 80%;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	&.arrow-left {
+		background-image: url(../images/index/arrow-left.png);
+	}
+
+	&.arrow-right {
+		background-image: url(../images/index/arrow-right.png);
+	}
 }
