@@ -1,0 +1,25 @@
+extends templates/layout
+
+block content
+    .page-main
+        .main__header
+            .header__left
+            .header__right
+            .header__content
+                .content__title Борода спасет мир
+        .main__steps
+            .steps__item
+                img(src="images/index/step-1.png")
+                .item__text Сделай селфи
+            .steps__arrow
+            .steps__item
+                img(src="images/index/step-2.png")
+                .item__text Преврати его в «Бороделфи»
+            .steps__arrow
+            .steps__item
+                img(src="images/index/step-3.png")
+                .item__text Узнай, сколько воды ты мог сэкономить
+            .steps__btn
+                a(href="#").btn-big Сделать бороделфи
+        .main__footer
+            a(href="#") Правила использования

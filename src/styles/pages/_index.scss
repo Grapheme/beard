@@ -1,0 +1,65 @@
+.page-main {
+	padding-bottom: 85px;
+
+	.main__header {
+		position: relative;
+		height: 685px;
+		background-image: url(../images/index/man.jpg);
+		background-size: 100% auto;
+		background-position: center center;
+	}
+
+	.main__steps {
+		text-align: center;
+		margin: 50px 0 0;
+
+		.steps__arrow {
+			display: inline-block;
+			vertical-align: top;
+			width: 100px;
+			height: 10px;
+			background-image: url('../images/index/step-arrow.png');
+			background-size: 100% auto;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin: 25px 20px 0;
+		}
+
+		.steps__item {
+			display: inline-block;
+			vertical-align: top;
+			width: 60px;
+
+			img {
+				max-width: 100%;
+			}
+
+			.item__text {
+				position: relative;
+				width: 120px;
+				left: 50%;
+				margin-left: -60px;
+			}
+		}
+
+		.steps__btn {
+			margin-top: 40px;
+		}
+	}
+
+	.main__footer {
+		position: absolute;
+		line-height: 111px;
+		height: 83px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background-image: url(../images/index/footer.png);
+		background-size: 100% auto;
+
+		a {
+			color: #fff;
+		}
+	}
+}

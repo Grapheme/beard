@@ -1,0 +1,148 @@
+.main-wrapper {
+  position: relative;
+  max-width: 810px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 4px;
+  background-image: url(../images/pattern.png);
+  background-size: 105px auto;
+  background-position: 2px 0;
+  background-repeat: repeat;
+  background-color: #fff;
+  overflow: hidden; }
+  .main-wrapper:before {
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: -46px;
+    z-index: 2;
+    background-image: url(../images/right-lines.png);
+    background-size: 100% auto;
+    width: 271px;
+    height: 166px; }
+  .main-wrapper .main-logo {
+    position: absolute;
+    top: 24px;
+    right: 21px;
+    z-index: 2;
+    width: 65px;
+    height: 25px;
+    background-image: url(../images/logo.png);
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+.wrapper-border:before, .wrapper-border:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  height: 4px;
+  background-size: auto 100%; }
+
+.wrapper-border:before {
+  top: 0;
+  background-image: url(../images/border-top.jpg); }
+
+.wrapper-border-sides:before, .wrapper-border-sides:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  background-size: 100% auto; }
+
+.wrapper-border-sides:before {
+  left: 0;
+  background-image: url(../images/border-left.jpg); }
+
+.wrapper-border-sides:after {
+  right: 0;
+  background-image: url(../images/border-right.jpg); }
+
+.socials {
+  position: absolute;
+  left: 95px;
+  top: 20px;
+  z-index: 2; }
+  .socials a {
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-size: 8px; }
+    .socials a span {
+      border-bottom: 1px solid; }
+    .socials a:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+      background-size: 100% auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-right: 5px; }
+  .socials .icon-fb:before {
+    background-image: url(../images/icon-fb.png); }
+  .socials .icon-su:before {
+    background-image: url(../images/icon-su.png); }
+  .socials .icon-in:before {
+    background-image: url(../images/icon-in.png); }
+
+.btn-big {
+  display: inline-block;
+  height: 58px;
+  line-height: 58px;
+  border: 1px solid #222;
+  border-radius: 2px;
+  background: #fff;
+  padding: 0 30px;
+  color: #222;
+  text-decoration: none; }
+
+.page-main {
+  padding-bottom: 85px; }
+  .page-main .main__header {
+    position: relative;
+    height: 685px;
+    background-image: url(../images/index/man.jpg);
+    background-size: 100% auto;
+    background-position: center center; }
+  .page-main .main__steps {
+    text-align: center;
+    margin: 50px 0 0; }
+    .page-main .main__steps .steps__arrow {
+      display: inline-block;
+      vertical-align: top;
+      width: 100px;
+      height: 10px;
+      background-image: url("../images/index/step-arrow.png");
+      background-size: 100% auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 25px 20px 0; }
+    .page-main .main__steps .steps__item {
+      display: inline-block;
+      vertical-align: top;
+      width: 60px; }
+      .page-main .main__steps .steps__item img {
+        max-width: 100%; }
+      .page-main .main__steps .steps__item .item__text {
+        position: relative;
+        width: 120px;
+        left: 50%;
+        margin-left: -60px; }
+    .page-main .main__steps .steps__btn {
+      margin-top: 40px; }
+  .page-main .main__footer {
+    position: absolute;
+    line-height: 111px;
+    height: 83px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: url(../images/index/footer.png);
+    background-size: 100% auto; }
+    .page-main .main__footer a {
+      color: #fff; }

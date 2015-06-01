@@ -1,0 +1,137 @@
+$borderWidth: 4px;
+
+.main-wrapper {
+	position: relative;
+	max-width: 810px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: $borderWidth;
+	background-image: url(../images/pattern.png);
+	background-size: 105px auto;
+	background-position: 2px 0;
+	background-repeat: repeat;
+	background-color: #fff;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		position: absolute;
+		right: -14px;
+		top: -46px;
+		z-index: 2;
+		background-image: url(../images/right-lines.png);
+		background-size: 100% auto;
+		width: 271px;
+		height: 166px;
+	}
+
+	.main-logo {
+		position: absolute;
+		top: 24px;
+		right: 21px;
+		z-index: 2;
+		width: 65px;
+		height: 25px;
+		background-image: url(../images/logo.png);
+		background-size: auto 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
+
+.wrapper-border {
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		left: $borderWidth;
+		right: $borderWidth;
+		height: $borderWidth;
+		background-size: auto 100%;
+	}
+
+	&:before {
+		top: 0;
+		background-image: url(../images/border-top.jpg);
+	}
+}
+
+.wrapper-border-sides {
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		width: $borderWidth;
+		top: 0;
+		bottom: 0;
+		background-size: 100% auto;
+	}
+
+	&:before {
+		left: 0;
+		background-image: url(../images/border-left.jpg);
+	}
+
+	&:after {
+		right: 0;
+		background-image: url(../images/border-right.jpg);
+	}
+}
+
+.socials {
+	position: absolute;
+	left: 95px;
+	top: 20px;
+	z-index: 2;
+
+	a {
+		margin-right: 10px;
+		color: #222;
+		text-decoration: none;
+		font-size: 8px;
+
+		span {
+			border-bottom: 1px solid;
+		}
+
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 8px;
+			height: 8px;
+			background-size: 100% auto;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-right: 5px;
+		}
+	}
+
+	.icon-fb {
+		&:before {
+			background-image: url(../images/icon-fb.png);
+		}
+	}
+
+	.icon-su {
+		&:before {
+			background-image: url(../images/icon-su.png);
+		}
+	}
+
+	.icon-in {
+		&:before {
+			background-image: url(../images/icon-in.png);
+		}
+	}
+}
+
+.btn-big {
+	display: inline-block;
+	height: 58px;
+	line-height: 58px;
+	border: 1px solid #222;
+	border-radius: 2px;
+	background: #fff;
+	padding: 0 30px;
+	color: #222;
+	text-decoration: none;
+}
