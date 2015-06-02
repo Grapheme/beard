@@ -1,0 +1,19 @@
+{
+  "name": "beard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Grapheme/beard",
+  "authors": [
+    "KostyaD <thedamaxstudio@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "~3.0.3"
+  }
+}

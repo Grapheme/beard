@@ -1,0 +1,107 @@
+.page-app {
+	padding: 107px 0 150px;
+
+	.app__left {
+		float: left;
+		width: 32%;
+		text-align: center;
+
+		.left__logo {
+			height: 190px;
+			background-image: url(../images/eco-logo.png);
+			background-size: auto 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		.left__adult {
+			height: 33px;
+			background-image: url(../images/index/adult.png);
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-top: 20px;
+		}
+
+		.left__content {
+			margin-top: 30px;
+
+			.content__title {
+				font-family: 'Telegraph2';
+				font-size: 43px;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -1px;
+				color: #222;
+				text-shadow: 0 2px 0 #f8f8f8, 0 4px 0 #222222;
+			}
+		}
+	}
+
+	.app__right {
+		float: left;
+		width: 68%;
+		text-align: center;
+
+		.right__choise {
+			margin-top: 20px;
+
+			.choise__item {
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				margin-bottom: 30px;
+
+				.item__image {
+					height: 195px;
+					background-size: contain;
+					background-position: center bottom;
+					background-repeat: no-repeat;
+				}
+
+				.item__btn {
+					margin-top: 5px;
+				}
+
+				&.item-web {
+					.item__image {
+						background-image: url(../images/app/choise-web.png);
+						background-size: 61%;
+					}
+				}
+
+				&.item-fb {
+					.item__image {
+						background-image: url(../images/app/choise-fb.png);
+						background-size: 53%;
+					}
+				}
+
+				&.item-upload {
+					.item__image {
+						background-image: url(../images/app/choise-upload.png);
+						background-size: 69%;
+					}
+				}
+			}
+		}
+
+		.right__screen {
+			position: relative;
+			width: 529px;
+
+			.screen__app {
+				width: 100%;
+				height: 582px;
+			}
+
+			.screen__bottom {
+				padding: 25px;
+				
+				.bottom__crop {
+					text-align: right;
+				}
+			}
+		}
+	}
+}

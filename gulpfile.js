@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	open = require('gulp-open'),
 	jade = require('gulp-jade'),
 	sass = require('gulp-sass'),
-	gulpIgnore = require('gulp-ignore');
+	gulpIgnore = require('gulp-ignore'),
+	wiredep = require('wiredep').stream;
 	 
 var build_path = './build';
 var app_path = './src';
@@ -29,6 +30,16 @@ gulp.task('server', function() {
 		gulp.src(project.open)
 			.pipe(open(''));
 	}
+});
+
+gulp.task('wiredep', function () {
+	gulp.src(app_path + '/styles/*.scss')
+		.pipe(wiredep())
+		.pipe(gulp.dest(app_path + '/styles'));
+
+	gulp.src(app_path + '/views/**/*.jade')
+		.pipe(wiredep())
+		.pipe(gulp.dest(app_path + '/views'));
 });
 
 gulp.task('jade', function() {

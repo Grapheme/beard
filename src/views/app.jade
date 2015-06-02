@@ -1,0 +1,32 @@
+extends templates/layout
+
+block content
+    .page-app
+        .app__left
+            .left__logo
+            .left__adult
+            .left__content
+                a.content__title Добавь<br>фото
+        .app__right
+            .right__screen(style="display: none;")
+                .screen__app
+                .screen__bottom
+                    .bottom__crop
+                        a(href="#").bottom__link Выбрать другое фото
+                        a(href="#").btn-big Обрезать фото
+            .right__choise
+                div
+                    .choise__item.item-web
+                        .item__image
+                        .item__btn
+                            a(href="#").btn-big Веб-камера
+                div
+                    .choise__item.item-upload
+                        .item__image
+                        .item__btn
+                            a(href="#").btn-big Загрузить
+                    .choise__item.item-fb
+                        .item__image
+                        .item__btn
+                            a(href="#").btn-big Взять из Facebook
+        .clearfix
